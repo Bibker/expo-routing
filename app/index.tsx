@@ -1,12 +1,21 @@
-import { useRouter } from 'expo-router';
+import { Link, useRouter } from 'expo-router';
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
 
 function Page() {
   const router = useRouter();
   return (
    <View>
-    <Text>Login</Text>
+    <Button 
+      onPress={()=> router.push('/register')}
+      title="Open Register"
+      />
+    <Link href={'/register'} asChild>
+      <Button title="Open Register with Link"/>
+    </Link>
+    <Link href={'/(tabs)/one'} asChild replace>
+      <Button title="Login"/>
+    </Link>
    </View>
   )
 }

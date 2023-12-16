@@ -10,6 +10,7 @@ function Layout() {
             title:'Login',
         }}
         />
+        <Stack.Screen name="(tabs)" options={{headerShown:false}}/>
   </Stack>
   )
 }
