@@ -11,6 +11,12 @@ function Page() {
             <Link href={'/(tabs)/one/details'} asChild>
                 <Button title="Go To Details" />
             </Link>
+            <Link href={'/(tabs)/one/bibker'} asChild>
+                <Button title="Go To Details (bibker)" />
+            </Link>
+            <Link href={'/modal'} asChild>
+                <Button title="Open Modal" />
+            </Link>
         </View>
     )
 }

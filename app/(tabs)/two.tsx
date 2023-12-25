@@ -4,7 +4,7 @@ import { Text, View } from 'react-native'
 function Page() {
   return (
    <View>
-        <Text>This is Tab 2</Text>
+        <Text>Update your Profile here</Text>
     </View>
   )
 }
